@@ -7,7 +7,7 @@ app.post("/", function (req, res) {
   try {
     console.log("executing deployment...");
     exec(
-      "ansible-pull -U git@github.com:alanchu9222/ansible-test.git playbook-test1.yml",
+      "ansible-pull -U git@github.com:alanchu9222/ansible-test.git playbook.yml",
       (error, stdout, stderr) => {
         if (error) {
           console.log(`error: ${error.message}`);
